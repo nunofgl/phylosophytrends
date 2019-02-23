@@ -10,13 +10,13 @@
  <source-databases>
  </source-databases>
  <target-database id="ppdb" dbcs-ref="DS0">
-  <table id="TAB1" populated="true" UUID="4100bffc-1c28-4c18-bde7-f55adbcdddcd" name="tbw_philosophers_l" objectType="TABLE" physicalName="tbw_philosophers_p" >
+  <table id="TAB1" populated="true" UUID="4100bffc-1c28-4c18-bde7-f55adbcdddcd" name="tbw_philosophers" objectType="TABLE" physicalName="tbw_philosophers" >
    <remarks></remarks>
    <folder id="FOLTAB11" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL2" populated="true" UUID="c5fce180-5caf-4293-9abf-67a96e26e770" autoIncrement="false" autoIncrementSequenceName="tbw_philosophers_p_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL2" populated="true" UUID="c5fce180-5caf-4293-9abf-67a96e26e770" autoIncrement="false" autoIncrementSequenceName="tbw_philosophers_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL3" populated="true" UUID="caa8d862-efd1-47ac-944a-d7e7743504f1" autoIncrement="false" autoIncrementSequenceName="tbw_philosophers_p_name_seq" defaultValue="" name="name" nullable="0" physicalName="name" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL3" populated="true" UUID="caa8d862-efd1-47ac-944a-d7e7743504f1" autoIncrement="false" autoIncrementSequenceName="tbw_philosophers_name_seq" defaultValue="" name="name" nullable="0" physicalName="name" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     </folder>
@@ -30,19 +30,19 @@
     </index>
    </folder>
   </table>
-  <table id="TAB6" populated="true" UUID="7d526668-45c7-4e4d-a797-1c42d12be467" name="dtw_statistics_l" objectType="TABLE" physicalName="dtw_statistics_p" >
+  <table id="TAB6" populated="true" UUID="7d526668-45c7-4e4d-a797-1c42d12be467" name="dtw_statistics" objectType="TABLE" physicalName="dtw_statistics" >
    <remarks></remarks>
    <folder id="FOLTAB61" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL7" populated="true" UUID="be935244-ab37-473e-903e-e6a1ea66c031" autoIncrement="false" autoIncrementSequenceName="tbw_philosophers_p_phylosopher_id_seq" defaultValue="" name="phylosopher_id" nullable="0" physicalName="phylosopher_id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL7" populated="true" UUID="be935244-ab37-473e-903e-e6a1ea66c031" autoIncrement="false" autoIncrementSequenceName="dtw_statistics_phylosopher_id_seq" defaultValue="" name="phylosopher_id" nullable="0" physicalName="phylosopher_id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL8" populated="true" UUID="1b28813f-c9b3-470b-b6e2-b1e0e0253253" autoIncrement="false" autoIncrementSequenceName="dtw_statistics_p_statistics_date_seq" defaultValue="" name="statistics_date" nullable="0" physicalName="statistics_date" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+    <column id="COL8" populated="true" UUID="1b28813f-c9b3-470b-b6e2-b1e0e0253253" autoIncrement="false" autoIncrementSequenceName="dtw_statistics_statistics_date_seq" defaultValue="" name="statistics_date" nullable="0" physicalName="statistics_date" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
      <remarks>date of collection of statistics</remarks>
     </column>
-    <column id="COL9" populated="true" UUID="ec5fbdf6-64b5-4fec-87cc-528fab300a55" autoIncrement="false" autoIncrementSequenceName="dtw_statistics_p_mention_number_seq" defaultValue="" name="mention_number" nullable="0" physicalName="mention_number" precision="10" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+    <column id="COL9" populated="true" UUID="ec5fbdf6-64b5-4fec-87cc-528fab300a55" autoIncrement="false" autoIncrementSequenceName="dtw_statistics_mention_number_seq" defaultValue="" name="mention_number" nullable="0" physicalName="mention_number" precision="10" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks>number of mentions of a philosopher since start_date</remarks>
     </column>
-    <column id="COL10" populated="true" UUID="db6c11c4-b34d-4f77-aaad-2c82bec26a12" autoIncrement="false" autoIncrementSequenceName="dtw_statistics_p_start_date_seq" defaultValue="" name="start_date" nullable="0" physicalName="start_date" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+    <column id="COL10" populated="true" UUID="db6c11c4-b34d-4f77-aaad-2c82bec26a12" autoIncrement="false" autoIncrementSequenceName="dtw_statistics_start_date_seq" defaultValue="" name="start_date" nullable="0" physicalName="start_date" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
      <remarks>stats are computed between this date and statistics_date</remarks>
     </column>
     </folder>
@@ -63,8 +63,8 @@
    </relationship>
   </relationships>
  </target-database>
- <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
- <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <ddl-generator type="ca.sqlpower.architect.ddl.LiquibaseDDLGenerator" allow-connection="false"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="true" author="Nuno Lages" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
   <table-pane table-ref="TAB1" x="72" y="97" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>

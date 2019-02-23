@@ -27,3 +27,4 @@
 
 
 *.dbeaver-data-sources.xml
+/db/model.architect~

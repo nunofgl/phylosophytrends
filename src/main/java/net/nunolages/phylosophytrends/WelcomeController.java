@@ -27,13 +27,21 @@ public class WelcomeController {
 	// This method is an example of a method that returns a ModelAndView object
 	// For a discussion of Model (String) VS ModelAndView see
 	// https://stackoverflow.com/questions/16951609/when-to-use-modelandview-vs-model-in-spring
-	@RequestMapping(value = { "/", "/welcome" }, method = RequestMethod.GET)
+	@RequestMapping(value = { "/welcome" }, method = RequestMethod.GET)
 	public ModelAndView welcome() {
 		ModelAndView model = new ModelAndView();
 		Map<String, Object> modelMap = new HashMap<String, Object>();
 		modelMap.put("message", this.message);
 		model.setViewName("welcome");
 		model.addAllObjects(modelMap);
+		return model;
+	}
+
+
+	@RequestMapping(value = { "/" }, method = RequestMethod.GET)
+	public ModelAndView app() {
+		ModelAndView model = new ModelAndView();
+		model.setViewName("app");
 		return model;
 	}
 }

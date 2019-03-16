@@ -28,3 +28,9 @@
 
 *.dbeaver-data-sources.xml
 /db/model.architect~
+/src/main/resources/application.properties
+/node_modules/
+*.DS_Store
+/.back/
+/src/main/resources/static/built/
+/package-lock.json

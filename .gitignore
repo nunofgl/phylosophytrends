@@ -34,3 +34,4 @@
 /.back/
 /src/main/resources/static/built/
 /package-lock.json
+/notes.txt

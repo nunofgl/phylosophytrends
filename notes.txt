@@ -1,3 +1,0 @@
-Reconnect local folder to Heroku deployed app
-$ heroku git:remote -a morning-depths-73898
-

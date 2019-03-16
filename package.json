@@ -1,28 +1,25 @@
 {
-  "name": "spring-data-rest-and-reactjs",
-  "version": "0.1.0",
-  "description": "Demo of ReactJS + Spring Data REST",
+  "name": "philosophytrends",
+  "version": "0.0.1",
+  "description": "An app that shows trends in worldwide philosophical discussion",
   "repository": {
     "type": "git",
-    "url": "git@github.com:spring-guides/tut-react-and-spring-data-rest.git"
+    "url": "git@github.com:nunofgl/phylosophytrends.git"
   },
   "keywords": [
-    "rest",
-    "hateoas",
     "spring",
-    "data",
+    "hibernate",
     "react"
   ],
-  "author": "Greg L. Turnquist",
+  "author": "Nuno Lages",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/spring-guides/tut-react-and-spring-data-rest/issues"
+    "url": "https://github.com/nunofgl/phylosophytrends/issues"
   },
-  "homepage": "https://github.com/spring-guides/tut-react-and-spring-data-rest",
+  "homepage": "https://github.com/nunofgl/phylosophytrends",
   "dependencies": {
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "rest": "^1.3.1"
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   },
   "scripts": {
     "watch": "webpack --watch -d"
@@ -32,7 +29,7 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.2",
-    "webpack": "^4.19.1",
-    "webpack-cli": "^3.1.0"
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
   }
 }

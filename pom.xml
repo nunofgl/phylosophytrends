@@ -107,7 +107,7 @@
 		        <version>2.0.7</version>
 			    <configuration>
 			       <processTypes>
-			           <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
+			           <web>java $JAVA_OPTS -cp target/classes:target/dependency/* net.nunolages.philosophytrends.SpringBootWebApplication</web>
 			       </processTypes>
 			    </configuration>
 		    </plugin>

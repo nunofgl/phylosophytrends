@@ -4,7 +4,7 @@
   "description": "An app that shows trends in worldwide philosophical discussion",
   "repository": {
     "type": "git",
-    "url": "git@github.com:nunofgl/phylosophytrends.git"
+    "url": "git@github.com:nunofgl/philosophytrends.git"
   },
   "keywords": [
     "spring",
@@ -14,9 +14,9 @@
   "author": "Nuno Lages",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/nunofgl/phylosophytrends/issues"
+    "url": "https://github.com/nunofgl/philosophytrends/issues"
   },
-  "homepage": "https://github.com/nunofgl/phylosophytrends",
+  "homepage": "https://github.com/nunofgl/philosophytrends",
   "dependencies": {
     "react": "^16.8.4",
     "react-dom": "^16.8.4"

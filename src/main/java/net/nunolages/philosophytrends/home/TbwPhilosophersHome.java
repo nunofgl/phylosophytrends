@@ -1,6 +1,6 @@
 // Generated Feb 24, 2019 12:02:22 AM by Hibernate Tools 5.3.6.Final
 
-package net.nunolages.phylosophytrends.home;
+package net.nunolages.philosophytrends.home;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ import org.hibernate.LockMode;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Example;
 
-import net.nunolages.phylosophytrends.domain.TbwPhilosophers;
+import net.nunolages.philosophytrends.domain.TbwPhilosophers;
 
 /**
  * Home object for domain model class TbwPhilosophers.

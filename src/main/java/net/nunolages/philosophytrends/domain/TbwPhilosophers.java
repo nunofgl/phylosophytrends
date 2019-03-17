@@ -1,6 +1,6 @@
 // Generated Feb 24, 2019 12:02:22 AM by Hibernate Tools 5.3.6.Final
 
-package net.nunolages.phylosophytrends.domain;
+package net.nunolages.philosophytrends.domain;
 
 import java.util.HashSet;
 import java.util.Set;

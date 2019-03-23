@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>philosophytrends</artifactId>
-<!-- 	<packaging>war</packaging> -->
+	<packaging>war</packaging>
 	<name>Philosophy Trends</name>
 	<description>Philosophy Trends</description>
-<!-- 	<url>https://morning-depths-73898.heroku.com</url> -->
+	<url>https://morning-depths-73898.heroku.com</url>
 	<version>0.0.1</version>
 
 	<parent>
@@ -21,6 +21,18 @@
 	</properties>
 
 	<dependencies>
+	
+<!-- 		<dependency> -->
+<!-- 	      <groupId>org.eclipse.jetty</groupId> -->
+<!-- 	      <artifactId>jetty-servlet</artifactId> -->
+<!-- 	      <version>9.4.7.v20170914</version> -->
+<!-- 		</dependency> -->
+		    
+<!-- 		<dependency> -->
+<!-- 	      <groupId>javax.servlet</groupId> -->
+<!-- 	      <artifactId>javax.servlet-api</artifactId> -->
+<!-- 	      <version>3.1.0</version> -->
+<!-- 		</dependency> -->
 
 		<!-- Web -->
 		<dependency>
@@ -95,6 +107,17 @@
 <!-- 		    <artifactId>validation-api</artifactId> -->
 <!-- 		</dependency> -->
 
+		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-web -->
+		<dependency>
+		    <groupId>org.springframework.security</groupId>
+		    <artifactId>spring-security-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+		</dependency>
+		  
 	</dependencies>
 	
 	<build>
@@ -109,6 +132,13 @@
 			       <processTypes>
 			           <web>java $JAVA_OPTS -cp target/classes:target/dependency/* net.nunolages.philosophytrends.SpringBootWebApplication</web>
 			       </processTypes>
+			       
+<!-- 			       <buildpacks> -->
+<!-- 			            <buildpack>heroku/exec</buildpack> -->
+<!-- 			            <buildpack>heroku/metrics</buildpack> -->
+<!-- 			            <buildpack>heroku/jvm</buildpack> -->
+<!-- 					</buildpacks> -->
+					
 			    </configuration>
 		    </plugin>
 			<plugin>

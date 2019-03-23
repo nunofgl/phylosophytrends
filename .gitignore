@@ -27,6 +27,7 @@
 
 
 *.dbeaver-data-sources.xml
+/src/main/resources/application.properties
 /db/model.architect~
 /node_modules/
 *.DS_Store

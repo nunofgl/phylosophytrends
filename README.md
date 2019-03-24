@@ -29,6 +29,13 @@ spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
 #spring.datasource.initialSize=5
 #spring.datasource.removeAbandoned=true
 
+## Twitter credentials
+twitteraccount.consumerKey=...
+twitteraccount.consumerSecret=...
+# These are not used for now since we're only reading, not writing data
+#twitteraccount.accessToken=...
+#twitteraccount.accessTokenSecret=...
+
 hibernate.connection.driver_class=org.postgresql.Driver
 hibernate.connection.url=jdbc:postgresql://server:5432/database?currentSchema=philosophytrends
 hibernate.connection.username=username

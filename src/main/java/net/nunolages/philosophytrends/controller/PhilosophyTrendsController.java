@@ -1,4 +1,4 @@
-package net.nunolages.philosophytrends;
+package net.nunolages.philosophytrends.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

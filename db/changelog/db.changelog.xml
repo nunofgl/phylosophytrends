@@ -41,5 +41,16 @@
 	<changeSet author="Nuno Lages" id="4">
 	    <addForeignKeyConstraint baseTableName="dtw_statistics" constraintName="tbw_philosophers_p_dtw_statistics_p_fk" baseColumnNames="phylosopher_id" referencedTableName="tbw_philosophers" referencedColumnNames="id"/>
 	</changeSet>
+	
+	<changeSet author="Nuno Lages" id="5">
+	    <insert tableName="tbw_philosophers">
+	        <column name="id" valueNumeric="1"/>
+	        <column name="name" value="David Hume"/>
+	    </insert>
+	    <insert tableName="tbw_philosophers">
+	        <column name="id" valueNumeric="2"/>
+	        <column name="name" value="Aristotle"/>
+	    </insert>
+	</changeSet>
 
 </databaseChangeLog>

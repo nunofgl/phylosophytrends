@@ -52,5 +52,9 @@
 	        <column name="name" value="Aristotle"/>
 	    </insert>
 	</changeSet>
+	
+	<changeSet author="Nuno Lages" id="6">
+	    <renameTable newTableName="tbw_philosopher" oldTableName="tbw_philosophers"/>
+	</changeSet>
 
 </databaseChangeLog>

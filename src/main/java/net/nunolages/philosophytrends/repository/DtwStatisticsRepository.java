@@ -1,6 +1,6 @@
 // Generated Feb 24, 2019 12:02:22 AM by Hibernate Tools 5.3.6.Final
 
-package net.nunolages.philosophytrends.home;
+package net.nunolages.philosophytrends.repository;
 
 import java.util.List;
 
@@ -12,17 +12,18 @@ import org.hibernate.LockMode;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Example;
 
-import net.nunolages.philosophytrends.domain.TbwPhilosophers;
+import net.nunolages.philosophytrends.domain.DtwStatistics;
+import net.nunolages.philosophytrends.domain.DtwStatisticsId;
 
 /**
- * Home object for domain model class TbwPhilosophers.
+ * Home object for domain model class DtwStatistics.
  * 
- * @see .TbwPhilosophers
+ * @see .DtwStatistics
  * @author Hibernate Tools
  */
-public class TbwPhilosophersHome {
+public class DtwStatisticsRepository {
 
-	private static final Log log = LogFactory.getLog(TbwPhilosophersHome.class);
+	private static final Log log = LogFactory.getLog(DtwStatisticsRepository.class);
 
 	private final SessionFactory sessionFactory = getSessionFactory();
 
@@ -35,8 +36,8 @@ public class TbwPhilosophersHome {
 		}
 	}
 
-	public void persist(TbwPhilosophers transientInstance) {
-		log.debug("persisting TbwPhilosophers instance");
+	public void persist(DtwStatistics transientInstance) {
+		log.debug("persisting DtwStatistics instance");
 		try {
 			sessionFactory.getCurrentSession().persist(transientInstance);
 			log.debug("persist successful");
@@ -46,8 +47,8 @@ public class TbwPhilosophersHome {
 		}
 	}
 
-	public void attachDirty(TbwPhilosophers instance) {
-		log.debug("attaching dirty TbwPhilosophers instance");
+	public void attachDirty(DtwStatistics instance) {
+		log.debug("attaching dirty DtwStatistics instance");
 		try {
 			sessionFactory.getCurrentSession().saveOrUpdate(instance);
 			log.debug("attach successful");
@@ -57,8 +58,8 @@ public class TbwPhilosophersHome {
 		}
 	}
 
-	public void attachClean(TbwPhilosophers instance) {
-		log.debug("attaching clean TbwPhilosophers instance");
+	public void attachClean(DtwStatistics instance) {
+		log.debug("attaching clean DtwStatistics instance");
 		try {
 			sessionFactory.getCurrentSession().lock(instance, LockMode.NONE);
 			log.debug("attach successful");
@@ -68,8 +69,8 @@ public class TbwPhilosophersHome {
 		}
 	}
 
-	public void delete(TbwPhilosophers persistentInstance) {
-		log.debug("deleting TbwPhilosophers instance");
+	public void delete(DtwStatistics persistentInstance) {
+		log.debug("deleting DtwStatistics instance");
 		try {
 			sessionFactory.getCurrentSession().delete(persistentInstance);
 			log.debug("delete successful");
@@ -79,10 +80,10 @@ public class TbwPhilosophersHome {
 		}
 	}
 
-	public TbwPhilosophers merge(TbwPhilosophers detachedInstance) {
-		log.debug("merging TbwPhilosophers instance");
+	public DtwStatistics merge(DtwStatistics detachedInstance) {
+		log.debug("merging DtwStatistics instance");
 		try {
-			TbwPhilosophers result = (TbwPhilosophers) sessionFactory.getCurrentSession().merge(detachedInstance);
+			DtwStatistics result = (DtwStatistics) sessionFactory.getCurrentSession().merge(detachedInstance);
 			log.debug("merge successful");
 			return result;
 		} catch (RuntimeException re) {
@@ -91,10 +92,10 @@ public class TbwPhilosophersHome {
 		}
 	}
 
-	public TbwPhilosophers findById(int id) {
-		log.debug("getting TbwPhilosophers instance with id: " + id);
+	public DtwStatistics findById(DtwStatisticsId id) {
+		log.debug("getting DtwStatistics instance with id: " + id);
 		try {
-			TbwPhilosophers instance = (TbwPhilosophers) sessionFactory.getCurrentSession().get("TbwPhilosophers", id);
+			DtwStatistics instance = (DtwStatistics) sessionFactory.getCurrentSession().get("DtwStatistics", id);
 			if (instance == null) {
 				log.debug("get successful, no instance found");
 			} else {
@@ -107,10 +108,10 @@ public class TbwPhilosophersHome {
 		}
 	}
 
-	public List findByExample(TbwPhilosophers instance) {
-		log.debug("finding TbwPhilosophers instance by example");
+	public List findByExample(DtwStatistics instance) {
+		log.debug("finding DtwStatistics instance by example");
 		try {
-			List results = sessionFactory.getCurrentSession().createCriteria("TbwPhilosophers")
+			List results = sessionFactory.getCurrentSession().createCriteria("DtwStatistics")
 					.add(Example.create(instance)).list();
 			log.debug("find by example successful, result size: " + results.size());
 			return results;

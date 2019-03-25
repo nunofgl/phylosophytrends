@@ -8,12 +8,12 @@ package net.nunolages.philosophytrends.domain;
 public class DtwStatistics implements java.io.Serializable {
 
 	private DtwStatisticsId id;
-	private TbwPhilosophers tbwPhilosophers;
+	private TbwPhilosopher tbwPhilosophers;
 
 	public DtwStatistics() {
 	}
 
-	public DtwStatistics(DtwStatisticsId id, TbwPhilosophers tbwPhilosophers) {
+	public DtwStatistics(DtwStatisticsId id, TbwPhilosopher tbwPhilosophers) {
 		this.id = id;
 		this.tbwPhilosophers = tbwPhilosophers;
 	}
@@ -26,11 +26,11 @@ public class DtwStatistics implements java.io.Serializable {
 		this.id = id;
 	}
 
-	public TbwPhilosophers getTbwPhilosophers() {
+	public TbwPhilosopher getTbwPhilosophers() {
 		return this.tbwPhilosophers;
 	}
 
-	public void setTbwPhilosophers(TbwPhilosophers tbwPhilosophers) {
+	public void setTbwPhilosophers(TbwPhilosopher tbwPhilosophers) {
 		this.tbwPhilosophers = tbwPhilosophers;
 	}
 
